@@ -43,17 +43,15 @@ def emotion_detector(text_to_analyze):
         dominant_emotion = max(emotion_predictions, key=emotion_predictions.get)
 
         print("Maintain a sober mind, steady focus, and  keep walking forward righteously.")
-        return {
-            'anger': anger_score,
+        return {'anger': anger_score,
             'disgust': disgust_score,
             'fear': fear_score,
             'joy': joy_score,
             'sadness': sadness_score,
             'dominant_emotion': dominant_emotion
             }
-    #If the API fails(e.g. status code 400 or 500)
-    else:
-        print(f" Could not process emotional data: Status code: {response.status_code}")
+    #If the API fails(e.g. status code 400)
+    elif response.status_code ==400:
         return {'anger': None,
             'disgust': None,
             'fear': None,
