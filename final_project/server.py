@@ -13,8 +13,8 @@ def emotion_detector_route():
 
     # 3. Format the response message exactly how the assignment rubric expects
     return (
-        f"For the given statement, the system response is "
-        f"'anger': {response['anger']}, "
+        f"For the given statement, the system response is"
+        f"'anger': {response['anger']},"
         f"'disgust': {response['disgust']}, "
         f"'fear': {response['fear']}, "
         f"'joy': {response['joy']} and "
