@@ -8,7 +8,7 @@ from flask import Flask, render_template, request
 # pylint: disable=import-error
 from EmotionDetection.emotion_detection import emotion_detector
 
-app = Flask(__name__, template_folder='../templates', static_folder='../')
+app = Flask(__name__, template_folder='templates', static_folder='static')
 
 @app.route("/emotionDetector")
 def emotion_detector_route():
