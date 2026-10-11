@@ -6,7 +6,7 @@ from user-submitted text using a backend emotion detection service.
 from flask import Flask, render_template, request
 
 # pylint: disable=import-error
-from emotion_detection import emotion_detector
+from EmotionDetection.emotion_detection import emotion_detector
 
 app = Flask(__name__, template_folder='../templates', static_folder='../')
 
