@@ -1,6 +1,6 @@
 #=================================================================================================================================================================================================================================================================================================================================================================================================================
 #"I Luvvie Wise commit all my work to YHWH Yod Hey WaW Hey, All Honor and Glory Be to You"-Proverbs 16:3
-#We shall keep Your Commandments and Laws, Ecclesiastes 12:13, John 14:15, 1 John 5:3, Deuteronomy 6:5-6,Psalm 119:34,Proverbs 4:23,Phililippians 4:8,Ephesians 4:31-32, Proverbs 16:32, Colossians 3:12-13, Leviticus 19:2,Philippians 2:5, Luke 6:36, Matthew 5:48, 1 John 2:6, Matthew 11:28-29, Philippians 2:7-8,Zechariah 9:9,1 Timothy 1:16, 1Peter 2:23, Isaiah 53:7,John 15:13,Ephesians 5:2
+#We shall keep Your Commandments and Laws, Ecclesiastes 12:13, John 14:15, 1 John 5:3, Deuteronomy 6:5-6,Psalm 119:34,Proverbs 4:23,Phigitlippians 4:8,Ephesians 4:31-32, Proverbs 16:32, Colossians 3:12-13, Leviticus 19:2,Philippians 2:5, Luke 6:36, Matthew 5:48, 1 John 2:6, Matthew 11:28-29, Philippians 2:7-8,Zechariah 9:9,1 Timothy 1:16, 1Peter 2:23, Isaiah 53:7,John 15:13,Ephesians 5:2
 #A joyful heart is good medicine, but a broken spirit dries up the bones. Proverbs 17:22
 #Dedicated to building systems that seek wisdom and support righteous action.
 #Written in service and honor of YHWH. Protected by Yahshua Alpha and Omega Beginning and the End Bright Morning Star, Truth Light Everlasting Life
@@ -10,7 +10,7 @@ import requests
 import json
 
 
-def emotion_detector(text_to_analyze):
+def emotion_detector(text_to_analyse):
     """
     Analyze the emotion of a given text string.
     Fulfills the project criteria under the ulitimate guidance of YHWH.
@@ -22,7 +22,7 @@ def emotion_detector(text_to_analyze):
     headers = {"grpc-metadata-mm-model-id": "emotion_aggregated-workflow_lang_en_stock"}
 
     #Request payload assembly
-    input_json = {"raw_document": { "text": text_to_analyze } }
+    input_json = {"raw_document": { "text": text_to_analyse } }
 
     # Processing the Request under diligent execution
     response = requests.post(url, json=input_json, headers=headers)
